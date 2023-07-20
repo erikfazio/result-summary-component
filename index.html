@@ -11,7 +11,7 @@
       href="./assets/images/favicon-32x32.png"
     />
     <title>Results summary component</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,48 +20,52 @@
     />
   </head>
   <body>
-    <div class="container">
-      <div class="result">
-        <h1 class="result-title">Your Result</h1>
-        <div>76 of 100</div>
-        <span>Great</span>
-        <p class="result-text">
+    <div class="test-summary">
+      <section class="result">
+        <h1 class="result__title">Your Result</h1>
+        <div class="result__circle">
+          <span class="result__value">78</span>
+          <span class="result__total">of 100</span>
+        </div>
+        <span class="result__text">Great</span>
+        <p class="result__description">
           You scored higher than 65% of the people who have taken these tests.
         </p>
-      </div>
-      <div class="summary">
-        <h1 class="summary-title">Summary</h1>
-        <div class="summary-skill reaction">
-          <div class="summary-heading">
-            <img src="assets/images/icon-reaction.svg" alt="Reaction icon" />
-            <span>Reaction</span>
-          </div>
-          <span>80 / 100</span>
-        </div>
-        <div class="summary-skill memory">
-          <div class="summary-heading">
-            <img src="assets/images/icon-memory.svg" alt="Memory icon" />
-            <span>Memory</span>
-          </div>
-          <span>92 / 100</span>
-        </div>
-        <div class="summary-skill verbal">
-          <div class="summary-heading">
-            <img src="assets/images/icon-verbal.svg" alt="Verbal icon" />
-            <span>Verbal </span>
-          </div>
-          <span>61 / 100</span>
-        </div>
-        <div class="summary-skill visual">
-          <div class="summary-heading">
-            <img src="assets/images/icon-visual.svg" alt="Visual icon" />
-            <span>Visual</span>
-          </div>
-          <span>72 / 100</span>
-        </div>
-
-        <button type="button" class="button">Continue</button>
-      </div>
+      </section>
+      <section class="summary">
+        <h1 class="summary__title">Summary</h1>
+        <ul class="summary__skill-list">
+          <li class="summary__skill reaction">
+            <div class="summary__heading">
+              <img src="assets/images/icon-reaction.svg" alt="Reaction icon" />
+              <span>Reaction</span>
+            </div>
+            <span>80 / 100</span>
+          </li>
+          <li class="summary__skill memory">
+            <div class="summary__heading">
+              <img src="assets/images/icon-memory.svg" alt="Memory icon" />
+              <span>Memory</span>
+            </div>
+            <span>92 / 100</span>
+          </li>
+          <li class="summary__skill verbal">
+            <div class="summary__heading">
+              <img src="assets/images/icon-verbal.svg" alt="Verbal icon" />
+              <span>Verbal </span>
+            </div>
+            <span>61 / 100</span>
+          </li>
+          <li class="summary__skill visual">
+            <div class="summary__heading">
+              <img src="assets/images/icon-visual.svg" alt="Visual icon" />
+              <span>Visual</span>
+            </div>
+            <span>72 / 100</span>
+          </li>
+        </ul>
+        <button type="button" class="summary__button">Continue</button>
+      </section>
     </div>
   </body>
 </html>

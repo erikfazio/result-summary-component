@@ -1,0 +1,65 @@
+@use "colors" as *;
+
+.summary {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  gap: 1em;
+
+  .summary__skill-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .reaction {
+      background-color: $light-red-background;
+      color: $light-red;
+    }
+
+    .memory {
+      background-color: $orangey-yellow-background;
+      color: $orangey-yellow;
+    }
+
+    .verbal {
+      background-color: $green-teal-background;
+      color: $green-teal;
+    }
+
+    .visual {
+      background-color: $cobalt-blue-background;
+      color: $cobalt-blue;
+    }
+  }
+
+  .summary__skill {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px;
+  }
+
+  .summary__title {
+    font-size: 1.5rem;
+    color: $dark-navy;
+    font-weight: 700;
+  }
+
+  .summary__heading {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+  }
+
+  .summary__button {
+    padding: 18px;
+    background-color: $dark-gray-blue;
+    color: $white;
+    border-radius: 128px;
+    border: none;
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: normal;
+  }
+}
