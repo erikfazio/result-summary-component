@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/erikfazio/result-summary-component/issues"
   },
-  "homepage": "https://github.com/erikfazio/result-summary-component#readme"
+  "homepage": "https://github.com/erikfazio/result-summary-component#readme",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
 }
