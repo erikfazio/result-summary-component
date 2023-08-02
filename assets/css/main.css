@@ -5,25 +5,41 @@
 .result {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   border-radius: 0 0 32px 32px;
+  gap: 1.5rem;
+  padding: 1.5rem 3.625rem 2.5rem 3.625rem;
   background: var(--gradient-1, linear-gradient(180deg, #75f 0%, #6943ff 0.01%, #2f2ce9 100%));
 }
 .result .result__title {
-  font-size: 1.5rem;
-  font-weight: 700;
   color: #cac9ff;
+  text-align: center;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 .result .result__text {
-  font-size: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.result .result__label {
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.5rem;
+  font-style: normal;
   font-weight: 700;
-  color: hsl(0, 0%, 100%);
+  line-height: normal;
 }
 .result .result__description {
-  font-size: 1.125rem;
-  font-weight: 500;
   color: #cac9ff;
+  text-align: center;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 .result .result__circle {
   display: flex;
@@ -36,24 +52,32 @@
   border-radius: 50%;
 }
 .result .result__circle .result__value {
-  color: hsl(0, 0%, 100%);
-  font-size: 72px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 3.5rem;
+  font-style: normal;
   font-weight: 800;
+  line-height: 4.5rem;
 }
 .result .result__circle .result__total {
   color: #cac9ff;
-  font-size: 18px;
+  font-size: 1rem;
+  font-style: normal;
   font-weight: 700;
+  line-height: normal;
 }
 
 .summary {
-  padding: 24px 30px 30px 30px;
+  height: 100%;
+  padding: 1.5rem 1.875rem 1.875rem 1.875rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5rem;
 }
 .summary .summary__title {
-  color: var(--dark-navy, #303b59);
-  font-feature-settings: "clig" off, "liga" off;
-  font-family: Hanken Grotesk;
-  font-size: 18px;
+  color: #303b59;
+  font-size: 1.125rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -62,47 +86,7 @@
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  gap: 16px;
-}
-.summary .summary__skill-list .reaction {
-  color: var(--red, #f55);
-  font-feature-settings: "clig" off, "liga" off;
-  font-family: Hanken Grotesk;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  background: var(--red-95-white, linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #f55);
-}
-.summary .summary__skill-list .memory {
-  color: var(--yellow, #ffb21e);
-  font-feature-settings: "clig" off, "liga" off;
-  font-family: Hanken Grotesk;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  background: var(--yellow-95-white, linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #ffb21e);
-}
-.summary .summary__skill-list .verbal {
-  color: var(--green, #00bb8f);
-  font-feature-settings: "clig" off, "liga" off;
-  font-family: Hanken Grotesk;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  background: var(--green-95-white, linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #00bb8f);
-}
-.summary .summary__skill-list .visual {
-  color: var(--blue, #1125d6);
-  font-feature-settings: "clig" off, "liga" off;
-  font-family: Hanken Grotesk;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  background: var(--blue-95-white, linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #1125d6);
+  gap: 1rem;
 }
 .summary .summary__skill-list .summary__skill {
   display: flex;
@@ -110,31 +94,59 @@
   align-items: center;
   justify-content: space-between;
   border-radius: 12px;
-  padding: 16px;
+  padding: 1rem;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
-.summary .summary__skill-list .summary__skill .summary__skill-heading {
+.summary .summary__skill-list .reaction {
+  color: var(--red, #f55);
+  background: var(--red-95-white, linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #f55);
+}
+.summary .summary__skill-list .memory {
+  color: var(--yellow, #ffb21e);
+  background: var(--yellow-95-white, linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #ffb21e);
+}
+.summary .summary__skill-list .verbal {
+  color: var(--green, #00bb8f);
+  background: var(--green-95-white, linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #00bb8f);
+}
+.summary .summary__skill-list .visual {
+  color: var(--blue, #1125d6);
+  background: var(--blue-95-white, linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #1125d6);
+}
+.summary .summary__skill-list .summary__skill-heading {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 12px;
+  gap: 0.75rem;
 }
-.summary .summary__skill-list .summary__skill .summary__skill-heading .summary__skill-point {
-  color: var(--dark-navy, #303b59);
+.summary .summary__skill-list .summary__skill-points {
+  color: #303b59;
   text-align: right;
-  font-feature-settings: "clig" off, "liga" off;
-  font-family: Hanken Grotesk;
-  font-size: 16px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   opacity: 0.5;
 }
-.summary .summary__skill-list .summary__skill .summary__skill-heading .summary__skill-partial-point {
-  color: var(--dark-navy, #303b59);
+.summary .summary__skill-list .summary__skill-points .summary__skill-partial-points {
+  color: #303b59;
   text-align: right;
-  font-feature-settings: "clig" off, "liga" off;
-  font-family: Hanken Grotesk;
-  font-size: 16px;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  opacity: 1;
+}
+.summary .summary__button {
+  border: none;
+  border-radius: 128px;
+  background: #303b59;
+  color: #ffffff;
+  padding: 1rem 7rem;
+  font-size: 1.125rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -154,7 +166,8 @@ html {
 body {
   font-size: 18px;
   font-family: "Hanken Grotesk", sans-serif;
-  background-color: hsl(0, 0%, 100%);
+  font-feature-settings: "clig" off, "liga" off;
+  background-color: #ffffff;
   display: flex;
   flex-direction: column;
 }
