@@ -18,7 +18,7 @@ body {
   font-family: "Hanken Grotesk", sans-serif;
   background-color: $white;
   display: flex;
-  align-items: center;
+  flex-direction: column;
 }
 
 .test-summary {

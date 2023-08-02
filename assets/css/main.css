@@ -47,8 +47,7 @@
 }
 
 .summary {
-  width: 100%;
-  padding: 0 30px;
+  padding: 24px 30px 30px 30px;
 }
 .summary .summary__title {
   color: var(--dark-navy, #303b59);
@@ -60,44 +59,83 @@
   line-height: normal;
 }
 .summary .summary__skill-list {
+  list-style-type: none;
   display: flex;
   flex-direction: column;
-  margin: auto;
-  list-style-type: none;
   gap: 16px;
 }
 .summary .summary__skill-list .reaction {
+  color: var(--red, #f55);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Hanken Grotesk;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
   background: var(--red-95-white, linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #f55);
 }
 .summary .summary__skill-list .memory {
+  color: var(--yellow, #ffb21e);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Hanken Grotesk;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
   background: var(--yellow-95-white, linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #ffb21e);
 }
 .summary .summary__skill-list .verbal {
+  color: var(--green, #00bb8f);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Hanken Grotesk;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
   background: var(--green-95-white, linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #00bb8f);
 }
 .summary .summary__skill-list .visual {
+  color: var(--blue, #1125d6);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Hanken Grotesk;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
   background: var(--blue-95-white, linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #1125d6);
 }
-.summary .summary__skill {
+.summary .summary__skill-list .summary__skill {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   border-radius: 12px;
+  padding: 16px;
 }
-.summary .summary__skill .summary__heading {
+.summary .summary__skill-list .summary__skill .summary__skill-heading {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 12px;
 }
-.summary .summary__button {
-  width: 100%;
-  background-color: hsl(224, 30%, 27%);
-  color: hsl(0, 0%, 100%);
-  border-radius: 128px;
-  border: none;
-  font-size: 1.125rem;
+.summary .summary__skill-list .summary__skill .summary__skill-heading .summary__skill-point {
+  color: var(--dark-navy, #303b59);
+  text-align: right;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Hanken Grotesk;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  opacity: 0.5;
+}
+.summary .summary__skill-list .summary__skill .summary__skill-heading .summary__skill-partial-point {
+  color: var(--dark-navy, #303b59);
+  text-align: right;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Hanken Grotesk;
+  font-size: 16px;
+  font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
@@ -118,7 +156,7 @@ body {
   font-family: "Hanken Grotesk", sans-serif;
   background-color: hsl(0, 0%, 100%);
   display: flex;
-  align-items: center;
+  flex-direction: column;
 }
 
 .test-summary {
