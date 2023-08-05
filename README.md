@@ -5,7 +5,7 @@
 <div align="center">
 
 [Live](https://ef-result-summary-component.netlify.app/)
-| [Challenge](https://www.frontendmentor.io/solutions/intro-section-with-dropdown-navigation-V6T07Ji6vJ))
+| [Challenge](https://www.frontendmentor.io/solutions/intro-section-with-dropdown-navigation-V6T07Ji6vJ)
 
 </div>
 
