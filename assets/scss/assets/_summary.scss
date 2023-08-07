@@ -127,6 +127,10 @@
         linear-gradient(180deg, #75f 0%, #6943ff 0.01%, #2f2ce9 100%)
       );
     }
+
+    &:hover {
+      background: linear-gradient(#6542fe, #342ce2);
+    }
   }
 }
 
